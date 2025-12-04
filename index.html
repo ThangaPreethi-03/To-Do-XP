@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamified To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="navbar">
+        <h1 class="logo">🎯 To-Do XP</h1>
+        <button id="menuBtn" class="menu-btn">☰</button>
+    </nav>
+
+    <!-- SLIDE MENU -->
+    <div id="sideMenu" class="side-menu">
+        <h2>🎖 Badge Requirements</h2>
+        <ul>
+            <li>🎉 Beginner – 50 XP</li>
+            <li>🥉 Bronze – 150 XP</li>
+            <li>🥈 Silver – 300 XP</li>
+            <li>🥇 Gold – 600 XP</li>
+            <li>💎 Diamond – 1200 XP</li>
+            <li>👑 Legend – 2000 XP</li>
+        </ul>
+        <button id="closeMenu" class="close-btn">Close</button>
+    </div>
+
+    <div class="container">
+        <div class="stats">
+            <div class="stat-box">🔥 Streak: <span id="streak">0</span> days</div>
+            <div class="stat-box">⭐ XP: <span id="xp">0</span></div>
+            <div class="stat-box">🏅 Badge: <span id="badge">None</span></div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="taskInput" placeholder="Enter your task...">
+            <button id="addBtn">Add</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

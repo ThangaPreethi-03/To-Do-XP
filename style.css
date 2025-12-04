@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===== BACKGROUND ===== */
+body {
+    background: linear-gradient(135deg, #000428, #004e92);
+    min-height: 100vh;
+    padding-bottom: 30px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    width: 100%;
+    padding: 15px 20px;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #00eaff;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #00eaff;
+    cursor: pointer;
+}
+
+/* ===== SIDE MENU ===== */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    width: 250px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    transition: 0.4s;
+    color: white;
+}
+
+.side-menu h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #00eaff;
+}
+
+.side-menu ul {
+    list-style: none;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.close-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #ff4444;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0px 0px 25px rgba(0,255,255,0.3);
+}
+
+/* ===== STATS ===== */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    background: rgba(255,255,255,0.1);
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: white;
+}
+
+/* ===== INPUT AREA ===== */
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+}
+
+#addBtn {
+    background: #00eaff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ===== TASK LIST ===== */
+#taskList {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.task {
+    background: rgba(255,255,255,0.12);
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    margin-left: 8px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.edit { background: #ffaa00; }
+.delete { background: #ff4444; }
+.complete { background: #44ff44; }
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 480px) {
+    .stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .task {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    #addBtn {
+        width: 100px;
+    }
+}
